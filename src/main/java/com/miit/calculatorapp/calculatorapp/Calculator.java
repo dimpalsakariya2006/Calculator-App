@@ -23,24 +23,40 @@ public class Calculator {
 		switch(x)
 		{
 			case 1:
-				sum = y + z;
-				System.out.println("Addition is: " + sum);
+				add(y, z);
+				System.out.println("Addition is: " + (y+z));
 				break;
 			case 2:
-				sub = y - z;
-				System.out.println("Substraction is: " + sub);
+				sub(y,z);
+				System.out.println("Substraction is: " + (y-z));
 				break;
 			case 3:
-				mul = y * z;
-				System.out.println("Multiplication is: " + mul);
+				mul(y,z);
+				System.out.println("Multiplication is: " + (y*z));
 				break;
 			case 4:
-				div = y / z;
-				System.out.println("Division is: " + div);
+				div(y,z);
+				System.out.println("Division is: " + (y/z));
 				break;
 				}
 		}
 
 	}
 
+	static int add(int y, int z) {
+		// TODO Auto-generated method stub
+		return y + z;
+	}
+	static int sub(int y, int z) {
+		// TODO Auto-generated method stub
+		return y + z;
+	}
+	static int mul(int y, int z) {
+		// TODO Auto-generated method stub
+		return y + z;
+	}
+	int div(int y, int z) {
+		// TODO Auto-generated method stub
+		return y + z;
+	}
 }
