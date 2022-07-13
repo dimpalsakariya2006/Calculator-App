@@ -6,7 +6,7 @@ public class Calculator {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int choice = 0 ,num1,num2;
+		int choice=0 ,num1,num2;
 		Scanner myObj = new Scanner(System.in);
 	    while(choice <5)
 		{
