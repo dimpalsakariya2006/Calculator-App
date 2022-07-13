@@ -6,57 +6,61 @@ public class Calculator {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int x=1, y, z,sum,sub,mul,div;
+		int choice = 0 ,num1,num2;
 		Scanner myObj = new Scanner(System.in);
-	    while(x<5)
+	    while(choice <5)
 		{
 		System.out.println("1-Addition");
 		System.out.println("2-Substraction");
 		System.out.println("3-Multiplication");
 		System.out.println("4-Division");
 		System.out.println("Select operation:  ");
-		x = myObj.nextInt();
+		choice = myObj.nextInt();
 		System.out.println("Enter Number:  ");
-		y = myObj.nextInt();
+		num1 = myObj.nextInt();
 		System.out.println("Enter Another Number  ");
-		z = myObj.nextInt();
-		switch(x)
+		num2 = myObj.nextInt();
+		switch(choice)
 		{
 			case 1:
-				add(y, z);
-				System.out.println("Addition is: " + (y+z));
+				add(num1, num2);
+				System.out.println("Addition is: " + (num1+num2));
 				break;
 			case 2:
-				sub(y,z);
-				System.out.println("Substraction is: " + (y-z));
+				sub(num1,num2);
+				System.out.println("Substraction is: " + (num1-num2));
 				break;
 			case 3:
-				mul(y,z);
-				System.out.println("Multiplication is: " + (y*z));
+				mul(num1,num2);
+				System.out.println("Multiplication is: " + (num1*num2));
 				break;
 			case 4:
-				div(y,z);
-				System.out.println("Division is: " + (y/z));
+				div(num1,num2);
+				System.out.println("Division is: " + (num1/num2));
 				break;
 				}
 		}
 
 	}
 
-	static int add(int y, int z) {
+	static int add(int num1, int num2)
+	{
 		// TODO Auto-generated method stub
-		return y + z;
+		return num1+num2;
 	}
-	static int sub(int y, int z) {
+	static int sub(int num1, int num2)
+	{
 		// TODO Auto-generated method stub
-		return y - z;
+		return num1-num2;
 	}
-	static int mul(int y, int z) {
+	static int mul(int num1, int num2)
+	{
 		// TODO Auto-generated method stub
-		return y * z;
+		return num1*num2;
 	}
-	static int div(int y, int z) {
+	static int div(int num1, int num2)
+	{
 		// TODO Auto-generated method stub
-		return y / z;
+		return num1/num2;
 	}
 }
