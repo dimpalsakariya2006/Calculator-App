@@ -14,11 +14,11 @@ public class Calculator {
 		System.out.println("2-Substraction");
 		System.out.println("3-Multiplication");
 		System.out.println("4-Division");
-		System.out.println("Select operation:");
+		System.out.println("Select operation:  ");
 		x = myObj.nextInt();
-		System.out.println("Enter Number: ");
+		System.out.println("Enter Number:  ");
 		y = myObj.nextInt();
-		System.out.println("Enter Another Number");
+		System.out.println("Enter Another Number  ");
 		z = myObj.nextInt();
 		switch(x)
 		{
@@ -49,14 +49,14 @@ public class Calculator {
 	}
 	static int sub(int y, int z) {
 		// TODO Auto-generated method stub
-		return y + z;
+		return y - z;
 	}
 	static int mul(int y, int z) {
 		// TODO Auto-generated method stub
-		return y + z;
+		return y * z;
 	}
-	int div(int y, int z) {
+	static int div(int y, int z) {
 		// TODO Auto-generated method stub
-		return y + z;
+		return y / z;
 	}
 }
